@@ -4,7 +4,7 @@ MAINTAINER stonesfour "sunshilei@caicloud.io"
 
 
 # change path to your repo dir
-COPY ./caicloud-provider/target/caicloud-provider-0.0.1-SNAPSHOT.jar  /caicloud-provider.jar
+COPY ./caicloud-mircroservice/caicloud-provider/target/caicloud-provider-0.0.1-SNAPSHOT.jar  /caicloud-provider.jar
 
 EXPOSE 8080
 
