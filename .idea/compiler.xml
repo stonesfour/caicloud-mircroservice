@@ -6,12 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="demo-hello" />
-        <module name="demo-hello1" />
+        <module name="caicloud-consumer" />
+        <module name="caicloud-provider" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="test" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
