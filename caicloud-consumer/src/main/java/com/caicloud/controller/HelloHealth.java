@@ -33,7 +33,7 @@ public class HelloHealth {
                          @HeaderParam("x-b3-parentspanid") String xparentspanid,
                          @HeaderParam("x-b3-sampled") String xsampled,
                          @HeaderParam("x-b3-flags") String xflags,
-                         @HeaderParam("x-ot-span-context") String xotspan) ) {
+                         @HeaderParam("x-ot-span-context") String xotspan){
         return this.restTemplate.getForObject("http://caicloud-provider:8081/health/服务提供者-" + id, String.class);
     }
 
@@ -46,7 +46,7 @@ public class HelloHealth {
                          @HeaderParam("x-b3-parentspanid") String xparentspanid,
                          @HeaderParam("x-b3-sampled") String xsampled,
                          @HeaderParam("x-b3-flags") String xflags,
-                         @HeaderParam("x-ot-span-context") String xotspan) ) {
+                         @HeaderParam("x-ot-span-context") String xotspan){
         return this.restTemplate.getForObject("http://"+url+":"+port +"/health/服务提供者-" + name, String.class);
     }
 }
