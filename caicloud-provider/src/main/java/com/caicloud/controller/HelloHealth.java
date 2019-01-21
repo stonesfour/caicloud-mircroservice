@@ -47,7 +47,7 @@ public class HelloHealth {
                      @HeaderParam("x-b3-parentspanid") String xparentspanid,
                      @HeaderParam("x-b3-sampled") String xsampled,
                      @HeaderParam("x-b3-flags") String xflags,
-                     @HeaderParam("x-ot-span-context") String xotspan) ){
+                     @HeaderParam("x-ot-span-context") String xotspan){
 
         return "provider参数: "+name;
     }
