@@ -34,7 +34,7 @@ public class HelloHealth {
                          @HeaderParam("x-b3-sampled") String xsampled,
                          @HeaderParam("x-b3-flags") String xflags,
                          @HeaderParam("x-ot-span-context") String xotspan){
-        return this.restTemplate.getForObject("http://caicloud-provider:8081/health/服务提供者-" + id, String.class);
+        return this.restTemplate.getForObject("http://caicloud-provider:8080/health/服务提供者-" + id, String.class);
     }
 
     @GetMapping("/local/{url}/{name}")
